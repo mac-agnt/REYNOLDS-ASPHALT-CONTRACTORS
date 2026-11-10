@@ -2,8 +2,8 @@
    eyes, light themes the reverse; both come from the agent's own tint pair. */
 [data-agent-orb] .ao-body{fill:var(--ao-pale)}
 [data-agent-orb] .ao-eye{fill:var(--ao-tint)}
-:is([data-theme="light"],[data-theme="warm"],[data-theme="mist"],[data-theme="sand"]) [data-agent-orb] .ao-body{fill:var(--ao-tint)}
-:is([data-theme="light"],[data-theme="warm"],[data-theme="mist"],[data-theme="sand"]) [data-agent-orb] .ao-eye{fill:var(--ao-pale)}
+:is([data-theme="light"],[data-theme="warm"],[data-theme="mist"],[data-theme="sand"],[data-theme="reynolds-light"]) [data-agent-orb] .ao-body{fill:var(--ao-tint)}
+:is([data-theme="light"],[data-theme="warm"],[data-theme="mist"],[data-theme="sand"],[data-theme="reynolds-light"]) [data-agent-orb] .ao-eye{fill:var(--ao-pale)}
 
 /* A working or thinking agent's status light breathes; the rest hold still. */
 @keyframes agentLight{0%,100%{opacity:1}50%{opacity:.42}}

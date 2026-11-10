@@ -1,5 +1,6 @@
 import { Fragment } from "react";
 import { arr, cat, css, cx, txt } from "../../runtime/template";
+import OntologyRelations from "../../reynolds/OntologyRelations";
 
 type Props = { v: any };
 
@@ -148,6 +149,7 @@ export default function RecordsOntology({ v }: Props) {
               </Fragment>
             ))}
           </div>
+          <OntologyRelations />
           <div style={{"flex":"1","minHeight":"0"}} />
           <button className={cx("ixp", "ixs")} onClick={v.graph?.run} style={{"height":"40px","display":"flex","alignItems":"center","justifyContent":"center","gap":"9px","border":"0","borderRadius":"var(--cta-r,9px)","background":"var(--accent-fill,var(--accent))","color":"var(--on-accent)","boxShadow":"var(--accent-glow,none)","fontSize":"13.5px","fontWeight":"500","cursor":"pointer","transition":"background .2s var(--ease),transform .18s var(--ease)"}}>
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
